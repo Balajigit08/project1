@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Sugar Peachy';
+  src: url('/fonts/Sugar Peachy DEMO') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ========================fish animation================================= */
+
+@keyframes move-to-right {
+  from {
+    transform: translateX(-120%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(120px);
+    opacity: 1;
+  }
+}
+
+@keyframes move-to-right1 {
+  from {
+    transform: translateX(-120%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(251px);
+    opacity: 1;
+  }
+}
+
+
+.animate-move-to-right {
+  animation: move-to-right 3s linear infinite;
+}
+
+.animate-move-to-right1 {
+  animation: move-to-right1 3s linear 10s infinite;
+}
